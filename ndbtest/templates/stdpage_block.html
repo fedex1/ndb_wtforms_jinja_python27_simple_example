@@ -1,0 +1,16 @@
+{% extends "page_template.html" %}
+{% block content %}
+<br/>
+<div class="PageContentBlock">
+<form method="post">
+<!-- <hr/>QQQ: form: {{form}}  <<< -->
+<table>
+{% for item in form %}
+<tr><td><center>{{item.name}}</center></td><td> {{item}} </td></tr>
+{% endfor %}
+</table>
+<input type="submit">
+</form>
+</div>
+<br/><br/>
+{% endblock content %}
